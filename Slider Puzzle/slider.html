@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>slider puzzle</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/3d481caf2d.js" crossorigin="anonymous"></script>
+  <link href="slider.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+  <div id="top"> 
+   
+    <div id="moves"><br><div id="pmove"></div></div>
+    <div id="stats" onclick="func()"></div>
+   <div id="Time">0:0</div>
+   <div id="back1" onclick="Back1()">Back</div>
+   <div id="back2" onclick="Back2()"><i class="fa-solid fa-house"></i></div>
+  
+   
+ </div>
+  
+   <div id="whole-container">
+    <img id="sliderGif" src="slider.gif"/>
+     <div id="Frontpage">
+ 
+       <div id="heading">SLIDER PUZZLE</div>
+       <div id="starting" onclick="Start()">START</div>
+     </div>
+    
+ 
+ <div id="board"></div>
+ <div id="whole-Display">
+   <div id="display"></div>
+   <div id="display1"></div>
+ <div id="userInput">
+   CHOOSE FILE
+   <input type="file" value="change" id="custom1" accept="image/*" />
+ </div>
+ <div id="level11" onclick="custom1()">START</div>
+ <div id="userInput2">
+    CHOOSE FILE
+   <input type="file" value="change" id="custom2" accept="image/*" />
+ </div>
+  <div id="level22" onclick="custom2()">START</div>
+ <div id="userInput3">
+    CHOOSE FILE
+   <input type="file" value="change" id="custom3" accept="image/*" />
+ </div>
+   <div id="level33" onclick="custom3()">START</div>
+ </div>
+ 
+ 
+ 
+ <div id="statBox">
+   <div class="stats">Statistics</div>
+     <div id="time">
+     <div class="time">EASY</div><div  id="timer" class="time">0:0</div>
+     </div>
+     <div id="time">
+       <div class="time">MEDIUM</div><div  id="medium" class="time">0:0</div>
+       </div>
+       <div id="time">
+         <div class="time">HARD</div><div  id="hard" class="time">0:0</div>
+         </div>
+ 
+      <div id="time">
+         <div class="best">Best Time</div><div id="bestTime" class="time">0:0</div>
+      </div>
+     <div id="time">
+           <div class="best">Best Moves</div><div id="bestMove" class="time">0</div>
+     </div>
+ 
+ </div>
+ 
+ <div id="level">
+   <div class="level1">
+     <div id="level1" onclick="Level1()">EASY</div>
+    
+    
+     
+     <!-- <div id="level11" onclick="custom1()">3X3</div> -->
+     
+   </div>
+    <div class="level2">
+       <div id="level2" onclick="Level2()">MEDIUM</div>
+      <!-- <div id="level22" onclick="custom2()">4X4</div> -->
+    </div>
+  
+ <div class="level3">
+  <div id="level3" onclick="Level3()">HARD</div>
+   <!-- <div id="level33" onclick="custom3()">5X5</div> -->
+ </div>
+  
+ </div>
+   </div>
+  <script src="slider.js"></script>
+  <script src="slider2.js"></script>
+</body>
+</html>
